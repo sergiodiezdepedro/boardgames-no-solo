@@ -267,6 +267,42 @@
     width: 17px;
     height: 17px;
   }
+  .back-to-top {
+    position: fixed;
+    z-index: 20;
+    right: max(16px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+    display: grid;
+    width: 48px;
+    aspect-ratio: 1;
+    place-items: center;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--accent);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition:
+      opacity 180ms ease,
+      transform 180ms ease,
+      visibility 180ms ease;
+  }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .back-to-top:hover {
+    background: var(--accent);
+    color: var(--surface);
+  }
+  .back-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
   .game-card {
     --cover: #4d5b43;
     --cover-ink: #f2e8d5;

@@ -58,3 +58,23 @@ themeButton.addEventListener("click", () => {
   applyTheme(next);
   localStorage.setItem("juegos-theme", next);
 });
+
+const backToTopButton = document.querySelector("#back-to-top");
+const backToTopThreshold = 360;
+
+function updateBackToTopVisibility() {
+  const isVisible = window.scrollY > backToTopThreshold;
+  backToTopButton.classList.toggle("is-visible", isVisible);
+  backToTopButton.setAttribute("aria-hidden", String(!isVisible));
+  backToTopButton.tabIndex = isVisible ? 0 : -1;
+}
+
+window.addEventListener("scroll", updateBackToTopVisibility, { passive: true });
+updateBackToTopVisibility();
+
+backToTopButton.addEventListener("click", () => {
+  const behavior = matchMedia("(prefers-reduced-motion: reduce)").matches
+    ? "auto"
+    : "smooth";
+  window.scrollTo({ top: 0, behavior });
+});
