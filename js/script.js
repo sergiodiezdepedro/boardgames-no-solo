@@ -1,6 +1,7 @@
 const grid = document.querySelector("#game-grid");
 const search = document.querySelector("#game-search");
 const count = document.querySelector("#result-count");
+document.querySelector("#current-year").textContent = new Date().getFullYear();
 const playerIcon =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19v-1.5a5.5 5.5 0 0 1 11 0V19zM16 5.5a3 3 0 0 1 0 5.8m1 3a4.5 4.5 0 0 1 3.5 4.4V19h-3"/></svg>';
 
