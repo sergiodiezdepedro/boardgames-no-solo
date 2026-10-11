@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e211d" />
+    <meta
+      name="description"
+      content="Una colección personal de juegos de mesa que prefiero disfrutar en compañía." />
+    <title>Me interesan, pero no los puedo jugar solo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="page topbar">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark" aria-hidden="true">M/J</span>
+        <span>Juegos para compartir</span>
+      </a>
+      <button
+        class="icon-button"
+        id="theme-toggle"
+        type="button"
+        aria-label="Cambiar tema"
+        title="Cambiar tema">
+        <svg
+          id="theme-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true">
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+        </svg>
+      </button>
+    </header>
+
+    <main id="inicio" class="page">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Apuntes de ludoteca · selección personal</p>
+          <h1 id="page-title">
+            Me interesan,<br />pero no los puedo jugar solo
+          </h1>
+          <p class="intro-note">
+            Juegos que me llaman, pero que prefiero sacar a mesa con más gente.
+            Algunos tienen variante en solitario; aun así, no terminan de
+            convencerme.
+          </p>
+          <div class="legend" aria-label="Leyenda de solitarios">
+            <span><strong>*</strong> Tiene solitario oficial</span>
+            <span
+              ><strong>**</strong> Solitario oficial mediante expansión</span
+            >
+          </div>
+        </div>
+        <div class="collection-mark" aria-hidden="true">
+          <span>Mejor en buena compañía</span>
+        </div>
+      </section>
+
+      <section aria-label="Listado de juegos">
+        <div class="toolbar">
+          <div class="toolbar-start">
+            <span class="section-label">La colección</span>
+            <span class="count" id="result-count" aria-live="polite"></span>
+          </div>
+          <label class="search">
+            <span class="visually-hidden">Buscar un juego</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              aria-hidden="true">
+              <circle cx="10.8" cy="10.8" r="6.8" />
+              <path d="m16 16 4.5 4.5" />
+            </svg>
+            <input
+              id="game-search"
+              type="search"
+              placeholder="Buscar en la lista…"
+              autocomplete="off" />
+          </label>
+        </div>
+        <div class="grid" id="game-grid"></div>
+      </section>
+    </main>
+
+    <footer class="page footer">
+      <span>Una lista subjetiva y siempre abierta a revisión.</span>
+      <a
+        href="https://guiltless-airplane-5b8.notion.site/Me-interesan-pero-no-los-puedo-jugar-solo-115e2c71b98c80389767ff38ec994bb0"
+        target="_blank"
+        rel="noreferrer"
+        >Ver la lista original en Notion ↗</a
+      >
+    </footer>
+
+    <script src="js/games.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
