@@ -47,7 +47,7 @@ const games = [
   ["Cortesanos", "402283", "4"],
   ["Cerveza y pan", "369880", "2"],
   ["Sail", "377470", "2"],
-  ["Compile", "406652", "2"],
+  ["Compile: Main 1", "406652", "2"],
   ["Hansa Teutonica Big Box", "286749", "5"],
   ["Troyes", "73439", "3", "*"],
   ["The Gang", "411567", "5"],

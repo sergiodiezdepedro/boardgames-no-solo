@@ -4,6 +4,14 @@ const count = document.querySelector("#result-count");
 document.querySelector("#current-year").textContent = new Date().getFullYear();
 const playerIcon =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19v-1.5a5.5 5.5 0 0 1 11 0V19zM16 5.5a3 3 0 0 1 0 5.8m1 3a4.5 4.5 0 0 1 3.5 4.4V19h-3"/></svg>';
+const imageFiles = {
+  110327: "110327.jpg",
+  115746: "115746.jpg",
+  167355: "167355.png",
+  233078: "233078.jpg",
+  373106: "373106.jpg",
+  450539: "450539.jpg",
+};
 
 function renderGames() {
   const query = search.value.trim().toLocaleLowerCase("es");
@@ -18,8 +26,9 @@ function renderGames() {
           const url = id
             ? `https://boardgamegeek.com/boardgame/${id}`
             : "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Carnival%20of%20Sins";
+          const imageFile = imageFiles[id] || `${id}.webp`;
           return `<article class="game-card">
-      <div class="cover" aria-hidden="true"><span class="cover-glyph">MESA / ${String(number).padStart(2, "0")}</span><span class="cover-title">${name}</span><span class="cover-subtitle">Jugar acompañados</span></div>
+      <div class="cover" aria-hidden="true"><img class="cover-image" src="img/${imageFile}" alt="" loading="lazy" decoding="async" /></div>
       <div class="card-body">
         <div class="card-meta"><span class="game-index">N.º ${String(number).padStart(2, "0")}</span><span class="solo-tag">${solo ? `Solitario ${solo}` : "Mejor en compañía"}</span></div>
         <h2 class="game-title">${name}</h2>
