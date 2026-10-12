@@ -11,6 +11,7 @@ const imageFiles = {
   233078: "233078.jpg",
   373106: "373106.jpg",
   450539: "450539.jpg",
+  82222: "82222.png",
 };
 
 function renderGames() {

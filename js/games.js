@@ -60,6 +60,8 @@ const games = [
   ["SETI", "418059", "3"],
   ["Jaipur", "54043", "2"],
   ["The Glasgow Train Robbery", "450539", "2"],
+  ["La batalla de Versalles", "379959", "2"],
+  ["Xia: Leyendas de un Sistema a la Deriva", "82222", "3"],
 ];
 
 games.sort(([nameA], [nameB]) =>
