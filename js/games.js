@@ -67,6 +67,9 @@ const games = [
   ["Puerto Rico", "3076", "4"],
   ["Five Tribes: Los genios de Naqala", "57354", "2"],
   ["Seasons", "108745", "2"],
+  ["Trajano", "102680", "4"],
+  ["Age of Steam", "4098", "4-5"],
+  ["Nippon: Zaibatsu", "434367", "4"],
 ];
 
 games.sort(([nameA], [nameB]) =>
