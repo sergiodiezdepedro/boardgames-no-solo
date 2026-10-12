@@ -62,6 +62,8 @@ const games = [
   ["The Glasgow Train Robbery", "450539", "2"],
   ["La batalla de Versalles", "379959", "2"],
   ["Xia: Leyendas de un Sistema a la Deriva", "82222", "3"],
+  ["Alta tensión", "2651", "4-5"],
+  ["Guerra del Anillo: El juego de cartas", "362944", "4"],
 ];
 
 games.sort(([nameA], [nameB]) =>
