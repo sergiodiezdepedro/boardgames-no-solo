@@ -57,13 +57,16 @@ const games = [
   ["Innovation Ultimate", "388367", "2"],
   ["War Chest", "249259", "2"],
   ["Carnival of Sins", "447379", "4-5"],
-  ["SETI", "418059", "3"],
+  ["SETI", "418059", "3", "*"],
   ["Jaipur", "54043", "2"],
   ["The Glasgow Train Robbery", "450539", "2"],
   ["La batalla de Versalles", "379959", "2"],
   ["Xia: Leyendas de un Sistema a la Deriva", "82222", "3"],
   ["Alta tensión", "2651", "4-5"],
-  ["Guerra del Anillo: El juego de cartas", "362944", "4"],
+  ["Guerra del Anillo: El juego de cartas", "362944", "4", "**"],
+  ["Puerto Rico", "3076", "4"],
+  ["Five Tribes: Los genios de Naqala", "57354", "2"],
+  ["Seasons", "108745", "2"],
 ];
 
 games.sort(([nameA], [nameB]) =>
