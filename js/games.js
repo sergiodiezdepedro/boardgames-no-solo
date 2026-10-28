@@ -71,6 +71,7 @@ const games = [
   ["Age of Steam", "4098", "4-5"],
   ["Nippon: Zaibatsu", "434367", "4", "*"],
   ["Carson City: Big Box", "177352", "4", "*"],
+  ["Knarr", "379629", "3"],
 ];
 
 games.sort(([nameA], [nameB]) =>
