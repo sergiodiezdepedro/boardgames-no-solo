@@ -73,7 +73,7 @@ const games = [
   ["Carson City: Big Box", "177352", "4", "*"],
   ["Knarr", "379629", "3"],
   ["Feudum", "163839", "4"],
-  ["Schadenfreude", "9651404", "4"],
+  ["Schadenfreude", "324711", "4"],
 ];
 
 games.sort(([nameA], [nameB]) =>
